@@ -1,0 +1,29 @@
+.consultation {
+    
+    padding: 100px 0 108px 0;
+    background: url('../img/bg_mid.png') center (center / cover) no-repeat;
+    &__title {
+        font-size: 36px;
+        line-height: 54px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: left;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    .error {
+        border: 1px solid $main-color;
+    }
+    label.error {
+        color: #FFFFFF;
+        border: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

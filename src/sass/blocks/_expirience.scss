@@ -1,0 +1,82 @@
+.expirience {
+    padding-top: 120px;
+    &__about {
+        text-align: center;
+        .divider {
+            margin: 20px auto 0;
+        }
+    }
+    &__title {
+        position: relative;
+        @include before_circle;
+        &::before {
+            margin: 0 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+        grid-template-rows: repeat(2, 160px);
+        column-gap: 135px;
+        row-gap: 45px;
+    }
+    &__block {
+        margin-left: 100px;
+        &-title {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                height: 350px;
+                width: 1px;
+                left: -42px;
+                top: 20px;
+                background-color: #000000;
+                z-index: 1;
+            }
+            &::before {
+                left: -51px;
+                top: 6px;
+                position: absolute;
+                content: '';
+                width: 19px;
+                height: 19px;
+                border-radius: 100%;
+                background-color: $second-color;
+                z-index: 2;
+
+            }
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        column-gap: 22px;
+        margin-top: 40px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 42px;
+            left: -42px;
+            top: 17px;
+            background-color: #000000;
+            z-index: 1;
+    }
+}
+    &__text {
+        margin: 15px 0 0 5px;
+    }
+    &__circle {
+        position: relative;
+        @include before_circle;
+        margin-top: 8px;
+        img {
+            padding-left: 15px;
+            padding-top: 7px;
+        }
+    }
+}

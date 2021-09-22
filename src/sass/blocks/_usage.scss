@@ -1,0 +1,41 @@
+.usage {
+    padding-top: 120px;
+    &__about {
+        text-align: center;
+        .divider {
+            margin: 20px auto 0;
+        }
+    }
+    &__title {
+        position: relative;
+        @include before_circle;
+        &::before {
+            margin: 0 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-template-rows: repeat(2, minmax(240px, auto));
+        grid-auto-rows: minmax(240px, auto);
+        column-gap: 13px;
+        row-gap: 13px;
+    }
+    &__element {
+        border: 1px solid #000000;
+        padding: 30px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 30px;
+        }
+        &-title {
+            margin-top: 80px;
+        }
+        &-text {
+            margin-top: 15px;
+        }
+    }
+}

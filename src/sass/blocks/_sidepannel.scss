@@ -1,0 +1,37 @@
+.sidepannel {
+    z-index: 1;
+    mix-blend-mode: difference;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 340px;
+    top: 205px;
+    left: 45px;
+    align-items: center;
+    &__link {
+        &:hover {
+            svg path {
+                fill: rgb(78, 67, 3);
+            }
+        }
+    }
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #fff;
+    }
+    &__text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        height: 150px;
+        width: 32px;
+        span {
+            transform: rotate(-90deg) translate(-38%, -250%);
+            display: block;
+            width: 150px;
+        }
+    }
+}
