@@ -1,0 +1,87 @@
+@import 'libs/bootstrap-reboot.min';
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Extrabold.eot');
+    src: local('fonts/Gilroy Extrabold'), local('fonts/Gilroy-Extrabold'),
+        url('fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Semibold.eot');
+    src: local('fonts/Gilroy Semibold'), local('fonts/Gilroy-Semibold'),
+        url('fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Medium.eot');
+    src: local('fonts/Gilroy Medium'), local('fonts/Gilroy-Medium'),
+        url('fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle Display Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('fonts/Chronicle Display Roman'), url('fonts/Chronicle Display Roman.otf') format('otf');
+}
+
+
+@font-face {
+    font-family: 'Chronicle Display Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Chronicle Display Semibold'), url('Chronicle Display Semibold.woff') format('woff');
+}
+
+@import 'base/mixins';
+@import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/sidepannel';
+@import 'blocks/main';
+@import 'blocks/title';
+@import 'blocks/footer';
+
+
+* {
+    font-family: 'Gilroy', normal;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--BG);
+}
+:root {
+    --Accent: rgba(251, 215, 132, 1);
+    --BG: #0B1D26;
+    --WeiB: #FFFFFF;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.MNTN {
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+a {
+    color: var(--WeiB);
+    &:hover {
+        color: var(--WeiB);
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,29 @@
+@mixin before_line {
+    &::before {
+        content: '';
+        width: 72px;
+        height: 2px;
+        background: var(--Accent);
+        position: absolute;
+        left: -100px;
+        top: 8px;
+    
+    }
+}
+
+@mixin before_number {
+    &::before {
+        content: attr(data-text);
+        position: absolute;
+        left: -50px;
+        top: -150px;
+        width: 100%;
+        font-size: 240px;
+        line-height: 240px;
+        font-family: Gilroy;
+        font-weight: bold;
+        opacity: 0.1;
+        color: #FFFFFF;
+        overflow: hidden;
+    }
+}

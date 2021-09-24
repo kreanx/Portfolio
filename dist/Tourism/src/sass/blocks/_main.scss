@@ -1,0 +1,46 @@
+.main {
+    position: relative;
+    &__margin {
+        margin-top: 200px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 475px 545px;
+        column-gap: 80px;
+    }
+
+    &__subtitle {
+        margin-top: 140px;
+        position: relative;
+        color: var(--Accent);
+        text-transform: uppercase;
+        margin-left: 100px;
+        @include before_line;
+    }
+    &__title {
+        position: relative;
+        color: var(--WeiB);
+        margin-top: 27px;
+        @include before_number
+    }
+    &__text {
+        color: var(--WeiB);
+        margin-top: 27px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    &__nav {
+        a {
+            color: var(--Accent);
+        }
+        margin-top: 27px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__img {
+        max-height: 720px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}

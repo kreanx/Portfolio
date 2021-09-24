@@ -1,0 +1,20 @@
+.promo {
+    position: relative;
+    min-height: 1100px;
+    &::before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 200px;
+        bottom: -171px;
+        background: linear-gradient(to top, #0B1D26, transparent);
+    }
+    &__background {
+        img {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: -1;
+        }
+    }
+}

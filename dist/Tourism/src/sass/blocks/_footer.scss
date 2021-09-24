@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 200px;
+    padding-bottom: 100px;
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 687px 240px 173px;
+        justify-content: flex-start;
+    }
+    &__title {
+        color: var(--Accent);
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    &__copy {
+        position: absolute;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 8px;
+    }
+
+
+}
+li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
