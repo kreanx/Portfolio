@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    new WOW().init();
+
     const hamburger = document.querySelector('.hamburger'),
         menu = document.querySelector('.menu'),
         close = document.querySelector('.menu__close');
